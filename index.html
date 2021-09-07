@@ -22,23 +22,23 @@
                      <!-- Mac Memory -->  
                     <div>
                         <h5 class="mt-2 text-xl">Memory</h5>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="min-memory" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                         8GB Unified Memory
                         </button>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="max-memory" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                             16GB Unified Memory
                         </button>
                     </div>
                      <!-- Mac Storage -->  
                     <div class="mt-5">
                         <h5 class="text-xl">Storage</h5>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="ssd256-storage" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                         256GB SSD Storage
                         </button>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="ssd512-storage" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                             512GB SSD Storage
                         </button>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="ssd1tb-storage" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                             1TB SSD Storage
                         </button>
 
@@ -46,36 +46,37 @@
                      <!-- Mac Delevery -->  
                     <div>
                         <h5 class="mt-2 text-xl">Delivery</h5>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="with-cost" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                         Within 3 days Delivery Charge $20
                         </button>
-                        <button class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
+                        <button id="without-cost" class="bg-transparent hover:bg-blue-500 text-white-700 font-normal hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">
                             Within 7 Days Delivery Free!
                         </button>
                     </div>
                     <div class="mt-8">
-                        <h5 class="font-semibold">Best Price: $<span>1299</span></h5>
-                        <h5 class="font-semibold">Extra Charges for Memory: $<span>00</span></h5>
-                        <h5 class="font-semibold">Extra Charges for Storage: $<span>00</span></h5> 
-                        <h5 class="font-semibold">Delivery Charge: $<span>00</span></h5>
+                        <h5 class="font-semibold">Best Price: $<span id="best-price">1299</span></h5>
+                        <h5 class="font-semibold">Extra Charges for Memory: $<span id="extra-memory">00</span></h5>
+                        <h5 class="font-semibold">Extra Charges for Storage: $<span id="extra-storage">00</span></h5> 
+                        <h5 class="font-semibold">Delivery Charge: $<span id="delivery-cost">00</span></h5>
                         <hr>
-                        <h5 class="font-semibold">Total Price: $<span>1299</span></h5>
+                        <h5 class="font-semibold">Total Price: $<span id="total-price">1299</span></h5>
 
                     </div>
                      <!-- Mac Promo Code -->  
                     <div class="mt-8">
                         <span>Apply promo code</span>
                         <br>
-                        <input class="border border-gray-400 rounded p-1 my-1" type="text">
+                        <input id="promo-code" class="border border-gray-400 rounded p-1 my-1"  placeholder="stevekaku" type="text">
                       
-                        <button class="bg-pink-700 hover:bg-pink-400 text-white font-bold py-1 px-2 rounded">Apply</button>
+                        <button id="apply" class="bg-pink-700 hover:bg-pink-400 text-white font-bold py-1 px-2 rounded">Apply</button>
                     </div>
                 </div>
 
             </div>
-            <h3 class="text-3xl text-center font-semibold">Total : $<span>1299</span> </h3>
+            <h3 class="text-3xl text-center font-semibold">Total : $<span id="total">1299</span> </h3>
 
         </div>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>
